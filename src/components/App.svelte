@@ -5,7 +5,7 @@
 <main>
   <h1>Svelte template</h1>
 
-  <p>Write your HTML here</p>
+  <p>test change</p>
 </main>
 
 <style>
