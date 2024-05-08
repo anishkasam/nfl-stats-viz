@@ -86,9 +86,11 @@
         {/each}
       </select>
     </div>
+    <!--
     <h3>In {selectedYear}, each team gained an average of {Math.round(average)} {lowercaseType}</h3>
+    -->
     <div class="chartContainer">
-      <BarChart data={dataForYear} type={selectedType}/>
+      <BarChart data={dataForYear} type={selectedType} avg={average}/>
     </div>
   </div>
 </main>
@@ -106,11 +108,8 @@
     font-weight: 400;
   }
 
-  .chartContainer {
-    margin-top: -100px;
-  }
-
   select {
+    -webkit-appearance: none;
     font-family: "Inter";
     font-size: 16px;
     padding-top: -10px;
@@ -147,7 +146,5 @@
     width: 80px;
     display: inline-block;
     text-align: center;
-    padding-bottom: 11px;
-    padding-top: 11px;
   }
 </style>
