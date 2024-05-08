@@ -102,12 +102,12 @@
 
   h3 {
     font-family: "Inter";
-    margin-top: 100px;
+    margin-top: 75px;
     font-weight: 400;
   }
 
   .chartContainer {
-    margin-top: -125px;
+    margin-top: -100px;
   }
 
   select {
