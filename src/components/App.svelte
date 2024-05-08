@@ -147,5 +147,7 @@
     width: 80px;
     display: inline-block;
     text-align: center;
+    padding-bottom: 11px;
+    padding-top: 11px;
   }
 </style>

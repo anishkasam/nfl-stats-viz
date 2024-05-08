@@ -15,7 +15,7 @@
     // Define chart dimensions
     width = window.innerWidth * 0.8;
     height = window.innerHeight * 0.8;
-    innerWidth = width - margin.left - margin.right;
+    innerWidth = width - 100;
     innerHeight = height - margin.top - margin.bottom;
 
     // Create SVG element
