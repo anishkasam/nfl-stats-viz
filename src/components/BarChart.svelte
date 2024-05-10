@@ -112,13 +112,9 @@
    let previousType = "";
 
    function updateChart(time) {
-      const lineValue = 300;  // Set this to the value where the line should appear
-
-      // Update scales
       xScale.domain(data.map(d => d.team));
-      yScale.domain([0, 8000]); // Ensure scale is correct for total yards
+      yScale.domain([0, 8000]);
 
-      // Update the axes
       svg.select('.x-axis')
          .call(d3.axisBottom(xScale))
          .selectAll('text')
@@ -128,8 +124,7 @@
          .attr('transform', 'rotate(-45)').attr('font-family', 'Inter')
             .attr('font-size', '14px');
 
-      svg.select('.y-axis').call(d3.axisLeft(yScale)).attr('font-family', 'Inter')
-            .attr('font-size', '14px');
+      svg.select('.y-axis').call(d3.axisLeft(yScale)).attr('font-family', 'Inter').attr('font-size', '14px');
 
       if (previousType == "" && type == "Total Yards") {
          // Update rushing bars depending on the selection
@@ -549,9 +544,3 @@
 </script>
 
 <div class="chart-container"></div>
-
-<style>
-   rect.rec:hover {
-      cursor: pointer;
-   }
-</style>

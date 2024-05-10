@@ -102,14 +102,8 @@
     font-weight: 400;
   }
 
-  h3 {
-    font-family: "Inter";
-    margin-top: 75px;
-    font-weight: 400;
-  }
-
   select {
-    -webkit-appearance: none;
+    -webkit-appearance: menulist;
     font-family: "Inter";
     font-size: 16px;
     padding-top: -10px;
