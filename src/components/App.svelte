@@ -104,11 +104,13 @@
 
   select {
     -webkit-appearance: menulist;
+    outline: none;
     font-family: "Inter";
     font-size: 16px;
     padding-top: -10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    box-shadow: none;
   }
 
   .container {
@@ -134,6 +136,8 @@
     margin-left: 5px;
     margin-right: 5px;
     text-align: center;
+    justify-content: center;
+    height: 42px;
   }
 
   .controls button {
